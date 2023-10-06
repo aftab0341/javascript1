@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="visit-count"></p>
+    <!-- This is our First Chapter's Assignment. -->
+
+    <script>
+
+        alert("Welcome to our website!")
+
+        alert("Error! Please enter a valid password.")
+
+        alert(" Welcome to JS Land... \n" + " Happy Coding... \n")
+
+        alert("Welcome to our website!")
+        alert("Happy coding!")
+        alert("Welcome to our website!")
+        alert("Happy coding!")
+
+        To run alert frrom console write alert("") in console
+
+
+    </script>
+
+    <!-- This is our Second Chapter's Assignment. -->
+    <script>
+        var username
+
+        var myName = "Aftab Sheikh"
+
+        var message = "Hello World"
+
+        alert(message)
+
+        var userData = prompt("Enter Your Bio Data")
+        alert(userData)
+
+        var data = "PIZZA"
+        alert("PIZZA\nPIZZ\nPIZ\nPI\nP")
+
+        var email = "mailboxnouman@gmail.com"
+        alert("My Email Address is :" + " " +email)
+
+        var book = "A smarter way to learn java script"
+        alert("I Am Trying To Learn From The Book " + book)
+
+        var text = "Yah! I Am Writing This Line With Js"
+        document.write(text)
+
+        var store = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬"
+        alert(store)
+        document.write(store)
+
+
+
+    </script>
+
+    <!-- This is our Third Chapter's Assignment. -->
+    <script>
+
+        var age = prompt("Your Age")
+        alert("I Am" +" " + age +" " + "Years old")
+
+
+        var visitorCount = localStorage.getItem("visitorCount");
+
+        if (visitorCount === null) {
+            visitorCount = 1;
+        } else {
+            visitorCount = parseInt(visitorCount) + 1;
+        }
+
+        localStorage.setItem("visitorCount", visitorCount);
+
+        document.getElementById("visit-count").textContent = "You have visited this site " + visitorCount + " times.";
+
+
+        var birthYear = prompt("Enter Your Birth Year.")
+        document.write("Your Birth Year is" + " " + birthYear + "<br>")
+
+        if (!isNaN(birthYear)) {
+            document.write("Data Entered in prompt is Number.")
+        } else {
+            document.write("You have entered a string");
+        }
+
+
+        var name = prompt("Your Name")
+        var product = prompt("Product Name")
+        var qty = prompt("Quantity")
+        var shopName = prompt("Shop Name")
+        document.write(name + " " + "ordered" + " " + qty + " " + product + " " + "from" + " " + shopName)
+
+
+
+    </script>
+
+    <!-- This is our Four Chapter's Assignment. -->
+
+    <script>
+
+        var name = prompt("Your Name")
+        var product = prompt("Product Name")
+        var qty = prompt("Quantity")
+        var shopName = prompt("Shop Name")
+        document.write(name + " " + "ordered" + " " + qty + " " + product + " " + "from" + " " + shopName)
+
+
+        5 legal variable names:
+        var aftab
+        var aftab1
+        var aft_ab
+        var $afTab
+        var AFTAB
+
+        5 illegal variable names:
+        var af tab
+        var af-tab
+        var 1aftab
+        var aft@b
+        var let
+
+        document.write("<h1>Rules for naming JS variables</h1>")
+        document.write("<p>Variable names can only contain, numbers, $ and _. For example: $my_1stVariable <br/> Variable must begin with a letter, $ or _ . For example: Sname, _name or name <br/>  Variable names are case sensitive Variable names should not be JS keywords<p>")
+        
+
+    </script>
+        <!-- This is our Five Chapter's Assignment. -->
+
+        <script>
+            
+            var a = Number(prompt("Enter 1st Number"))
+            var b = Number(prompt("Enter 2nd Number"))
+            var sum = a - b
+            document.write("Subtraction of" + " " + a + " " + "and" + " " + b + " " + "=" + " " + sum)
+
+            var a = Number(prompt("Enter 1st Number"))
+            var b = Number(prompt("Enter 2nd Number"))
+            var sum = a * b
+            document.write("Multiply of" + " " + a + " " + "and" + " " + b + " " + "=" + " " + sum)
+
+            var a = Number(prompt("Enter 1st Number"))
+            var b = Number(prompt("Enter 2nd Number"))
+            var sum = a / b
+            document.write("Division of" + " " + a + " " + "and" + " " + b + " " + "=" + " " + sum)
+            
+            var a = Number(prompt("Enter 1st Number"))
+            var b = Number(prompt("Enter 2nd Number"))
+            var sum = a % b
+            document.write("Modulus of" + " " + a + " " + "and" + " " + b + " " + "=" + " " + sum)
+
+            var a = Number(prompt("Enter any Number"))
+            document.write("Value after variable declaration is: " + a)
+            var a = 20
+            document.write("<br>initial value is : " + a)
+            var a = a + 1
+            document.write("<br>after increment the value is : " + a)
+            var a = a + 7
+            document.write("<br>after addition to 7 the value is : " + a)
+            var a = a - 16
+            document.write("<br>after subtraction to 16 the value is : " + a)
+            var a = a % 3
+            document.write("<br>after Division to 3 the leftover reminder value is : " + a)
+            
+
+        </script>
+
+
+</body>
+
+</html>
